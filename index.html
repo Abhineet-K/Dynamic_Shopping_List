@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Shopping Page</title>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div id="main">
+        <div class="container">
+            <h1 id="main-heading">SELECT YOUR CHOICE</h1>
+
+
+            <div class="tab">
+                <button type="button" class="tablinks" onclick="showList(event, 'Men')">
+                    <img src="public/boy.svg" alt="boy-icon" class="gender-icons">
+                    <span>Men</span>
+                </button>
+                <button type="button" class="tablinks" onclick="showList(event, 'Women')">
+                    <img src="public/girl.svg" alt="girl-icon" class="gender-icons">
+                    <span>Women</span>
+                </button>
+                <button type="button" class="tablinks" onclick="showList(event, 'Kids')">
+                    <img src="public/kid.svg" alt="kid-icon" class="gender-icons">
+                    <span>Kids</span>
+                </button>
+            </div>
+
+
+            <div id="Men" class="tabcontent">
+                <div class="card">
+
+                    <div class="image-Container">
+                        <div class="badge-container">
+                            <span class="badge">Badge</span>
+                        </div>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+            </div>
+
+
+            <div id="Women" class="tabcontent">
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+            </div>
+
+
+
+            <div id="Kids" class="tabcontent">
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+                <div class="card">
+
+                    <div class="image-Container">
+                        <span class="badge">Badge</span>
+                        <img class="product-Image" alt="">
+                    </div>
+
+                    <p class="product-Name-Container">
+                        <span class="product-Name">Product Name</span>
+                        <span class="company-Name-Container">
+                            <span class="bullet">&#8226;</span>
+                            <span class="product-Company">Company</span>
+                        </span>
+                    </p>
+
+                    <p class="priceContainer">
+                        <span>
+                            <span class="rupees-text">Rs </span>
+                            <span class="actual-Price">19.99</span>
+                        </span>
+                        <span class="original-Price">19.99</span>
+                        <span class="discount-container">
+                            <span class="discount">50%</span>
+                            <span> off</span>
+                        </span>
+                    </p>
+
+                    <button type="button" onclick=addToCart() class="add-Cart-Button">Add to Cart</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

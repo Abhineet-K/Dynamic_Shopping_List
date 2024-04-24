@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, #873572, black);
+}
+
+.container {
+  width: 1000px;
+  height: 640px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-heading {
+  margin: 20px;
+  text-shadow: 0px 6px 8px #919191;
+}
+
+
+.tab {
+  width: 600px;
+  height: 40px;
+  padding: 1px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+.tablinks {
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablinks:first-child {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.tablinks:last-child {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.gender-icons {
+  display: none;
+  margin-inline: 10px;
+  transform: scale(1.8);
+}
+
+
+.tabcontent {
+  width: 900px;
+  height: 440px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  animation: fadeEffect 0.8s;
+
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#Women,
+#Kids {
+  display: none;
+}
+
+.card {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.image-Container {
+  transition: all 0.2s ease-in-out;
+  width: 220px;
+  height: 300px;
+  position: relative;
+}
+
+.image-Container:hover {
+  transform: scale(1.01);
+}
+
+.product-Image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.badge-Container {
+  position: absolute;
+  z-index: 2;
+}
+
+.badge {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 6px;
+  padding: 4px 6px;
+  z-index: 3;
+}
+
+
+.product-Name-Container {
+  color: black;
+  padding-inline: 4px;
+  padding-block: 0px;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.product-Name {
+  width: 50%;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bullet {
+  margin-left: 6px;
+}
+
+.product-Company {
+  font-weight: 500;
+}
+
+
+.priceContainer {
+  color: black;
+  margin-block: 0px;
+  padding-inline: 4px;
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+}
+
+.actual-Price,
+.rupees-text {
+  font-weight: 600;
+}
+
+.original-Price {
+  color: #919191;
+  text-decoration: line-through;
+}
+
+.discount-container {
+  color: #FF3737;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.add-Cart-Button {
+  height: 40px;
+  background-color: black;
+  color: #ffffff;
+  font-size: normal;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* For Tablet Screen */
+
+@media (width <1025px) {
+
+  .container {
+    width: 750px;
+    height: 480px;
+    border-radius: 6px;
+    gap: 4px;
+    justify-content: start;
+  }
+
+  #main-heading {
+    text-shadow: 0px 3px 3px #919191;
+    font-size: x-large;
+  }
+
+  .tab {
+    width: 450px;
+    height: 25px;
+  }
+
+  .tablinks {
+    width: 150px;
+    font-size: smaller;
+  }
+
+  .gender-icons {
+    margin-inline: 6px;
+    transform: scale(1.5);
+  }
+
+  .tabcontent {
+    width: 700px;
+    height: 350px;
+    gap: 10px;
+  }
+
+  .card {
+    width: 170px;
+  }
+
+  .product-Image {
+    width: 170px;
+    height: 220px;
+  }
+
+  .badge {
+    margin: 4px;
+    font-size: x-small;
+  }
+
+  .product-Name-Container {
+    font-size: small;
+  }
+
+  .priceContainer {
+    font-size: small;
+  }
+
+  .add-Cart-Button {
+    height: 30px;
+  }
+
+}
+
+
+
+
+/* For Mobile Screen */
+
+@media (width <768px) {
+  #main {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    position: fixed;
+    width: 370px;
+    height: 740px;
+    border-radius: 4px;
+    margin-block: 10px;
+  }
+
+  #main-heading {
+    font-size: large;
+  }
+
+  .tab {
+    width: 330px;
+    height: 25px;
+  }
+
+  .tablinks {
+    width: 110px;
+    font-size: x-small;
+  }
+
+  .gender-icons {
+    margin-inline: 4px;
+    transform: scale(1.2);
+  }
+
+
+  .tabcontent {
+    width: 360px;
+    height: 620px;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
+
+  .card {
+    flex: 1 1 170px;
+    margin-block: 10px;
+  }
+
+  .image-Container {
+    width: 170px;
+    height: 220px;
+  }
+
+  .product-Name-Container {
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+
+  .priceContainer {
+    margin-block: 4px;
+    gap: 3px;
+  }
+
+}
